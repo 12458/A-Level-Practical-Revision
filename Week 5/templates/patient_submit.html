@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        table {
+            margin: 50px auto;
+            width: 10%;
+            border: 1px black solid;
+            padding: 1em
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/submit_details" method="post">
+        <table>
+            <tr>
+                <th colspan="2">
+                    <h3>Patient Details</h3>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label>NRIC</label>
+                </td>
+                <td>
+                    <input type="text" name="id">
+                </td>
+            </tr>
+            <tr>
+            <tr>
+                <td>
+                    <label>Name</label>
+                </td>
+                <td>
+                    <input type="text" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Address</label>
+                </td>
+                <td>
+                    <input type="text" name="address">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>PostalCode</label>
+                </td>
+                <td>
+                    <input type="number" name="postalcode">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Contact</label>
+                </td>
+                <td>
+                    <input type="text" name="contact">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Allergies</label>
+                </td>
+                <td>
+                    <input type="text" name="allergies">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

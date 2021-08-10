@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        table {
+            margin: 50px auto;
+            width: 10%;
+            border: 1px black solid;
+            padding: 1em
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/submit_appointment" method="post">
+        <table>
+            <tr>
+                <th colspan="2">
+                    <h3>Appointment</h3>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <label>Your ID</label>
+                </td>
+                <td>
+                    <input type="text" name="id">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Doctor Name</label>
+                </td>
+                <td>
+                    <select name="doctor">
+                        {% for doctor in doctors %}
+                        <option value="{{doctor[0]}}">{{doctor[0]}}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Date (DDMMYYY)</label>
+                </td>
+                <td>
+                    <input type="text" name="date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Time (HHMM)</label>
+                </td>
+                <td>
+                    <input type="text" name="time">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

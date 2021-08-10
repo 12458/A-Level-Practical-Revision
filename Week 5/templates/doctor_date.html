@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            margin: 50px auto;
+            width: 10%;
+            border: 1px black solid;
+            padding: 1em
+        }
+    </style>
+</head>
+<body>
+    <h1>Doctor: {{doctor}}</h1>
+    <h1>Date: {{date}}</h1>
+    <table>
+        {% for row in rows %}
+        <tr>
+            <td>{{row[0]}}</td>
+            <td>{{row[1]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
