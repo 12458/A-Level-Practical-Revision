@@ -1,0 +1,9 @@
+Task 1.1
+
+["Alice", "Bob", "Alice", "Charlie", "Bob", "Bob", "Alice", "Charlie", "Alice"]
+["1", "6", "10", "6", "2", "1", "9", "1", "6", "9", "1", "2"]
+["Yes", "Yes", "No", "Yes", "No", "No", "No", "Yes", "No", "Yes"]
+
+Task 1.2
+
+"All tasks must be done in the computer laboratory. You are not allowed to bring in or take out any pieces of work or materials on paper or electronic media or in any other form."
