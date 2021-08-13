@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            margin: 50px auto;
+            width: 50%;
+            border: 1px black solid;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            School Name: {{school}}
+        </p>
+        <p>
+            School Zone: {{zone}}
+        </p>
+        <table>
+            <th>
+                <td>Subjects Offered</td>
+            </th>
+            {% for subject in subjects %}
+            <tr>
+                <td>{{subject[0]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
