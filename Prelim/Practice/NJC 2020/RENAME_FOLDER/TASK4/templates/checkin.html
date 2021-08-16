@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        table{
+            width: auto;
+            border: 1px black solid;
+            padding: 1em;
+            margin: auto;
+        }
+        th{
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/submit" method="POST">
+        <table>
+            <tr><th colspan="2">Check In</th></tr>
+            <tr>
+                <td><label>Name</label></td> <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td><label>NRIC</label></td> <td><input type="text" name="nric"></td>
+            </tr>
+            <tr>
+                <td><label>Contact Number</label></td> <td><input type="text" name="contact"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Check In"><input type="hidden" name="location_id" value="{{location_id}}"></td> <td><input type="reset" value="Cancel"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
