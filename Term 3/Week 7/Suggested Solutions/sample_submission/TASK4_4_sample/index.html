@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Task 4.4</title>
+    </head>
+    <body>
+        <h2>{{ school.name }}</h2>
+        <h2>Zone: {{ school.zone }}</h2>
+        <h2>Subjects offered</h2>
+        <ul>
+        {% for subject in subjects %}
+            <li>{{ subject }}</li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
