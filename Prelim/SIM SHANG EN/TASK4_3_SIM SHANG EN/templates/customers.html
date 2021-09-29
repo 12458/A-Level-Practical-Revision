@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Customers</title>
+	<style>
+	table{
+		margin: auto;
+		border-collapse: collapse;
+		border: solid;
+	}
+	td, th {border: solid;}
+	</style>
+</head>
+
+<body>
+	<table>
+		<tr>
+			<th>Full Name</th> <th>Date of birth</th> <th>Credit Card Number</th> <th>Savings Amount</th> <th>Customer Status</th>
+		</tr>
+		{% for customer in customers %}
+		<tr>
+			<td>{{customer[0]}}</td> <td>{{customer[1]}}</td> <td>{{customer[2]}}</td> <td>{{customer[3]}}</td> <td>{{customer[4]}}</td>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Confirmation</title>
+</head>
+
+<body>
+    <h1>New Car Registered Successfully!</h1>
+    <p>
+        A new car record have been registered:
+    </p>
+    <table width="300px" border="1px">
+        {% for i in range(data|length) %}
+        <tr>
+            <th align="left">
+                {{ header[i] }}
+            </th>
+            <td>
+                {{ data[i] }}
+            </td>
+        </tr>
+        {% endfor %}
+
+    </table>
+</body>
+
+</html>

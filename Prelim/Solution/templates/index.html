@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4.3</title>
+    <style>
+        table {
+            width: 75%;
+            border-collapse: collapse;
+            text-align: center
+        }
+        th {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Task 4.3</h1>
+<table>
+    <tr>
+        <th>Full Name</th>
+        <th>Date of Birth</th>
+        <th>CC Number</th>
+        <th>Amount</th>
+        <th>Type</th>
+    </tr>
+
+    {% for result in results%}
+    <tr>
+        <td>{{result["FullName"]}}</td>
+        <td>{{result["DOB"]}}</td>
+        <td>{{result["CreditCardNumber"]}}</td>
+        <td>{{result["SavingAmount"]}}</td>
+        <td>{{result["Type"]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
