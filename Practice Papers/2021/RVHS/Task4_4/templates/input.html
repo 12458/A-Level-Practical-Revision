@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>New Car Record</h1>
+    <div>
+        <form action="/submit" , method="POST">
+            <table>
+                <tr>
+                    <td><label>VIN:</label></th>
+                    <td><input type="text" name="vin"></td>
+                </tr>
+                <tr>
+                    <td><label>Brand:</label></td>
+                    <td><input type="text" name="brand"></td>
+                </tr>
+                <tr>
+                    <td><label>Vehicle Type:</label></td>
+                    <td><select name="v_type">
+                            {% for v_type in v_types %}<option value="{{v_type[0]}}">{{v_type[0]}}</option>
+                            {% endfor %}
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label>Energy Source:</label></td>
+                    <td><select name="energy_source">
+                            {% for energy_source in energy_sources %}<option value="{{energy_source[0]}}">
+                                {{energy_source[0]}}</option>{% endfor %}
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label>Daily Price:</label></td>
+                    <td><input type="text" name="d_price"></td>
+                </tr>
+                <tr>
+                    <td><label>Submit:</label></td>
+                    <td><input type="submit"></td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+</body>
+
+</html>
