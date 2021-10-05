@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+  </head>
+  <body>
+    <table>
+        <tr> <th>Sender</th> <th>AccessDate</th> <th>AppType</th> <th>Status</th> </tr>
+        {% for app in apps %}
+        <tr> <td>{{app.Sender}}</td> <td>{{app.AccessDate}}</td> <td>{{app.getAppType()}}</td> <td>{{app.getSuccess()}}</td> </tr>
+        {% endfor %}
+    </table>
+  </body>
+</html>
